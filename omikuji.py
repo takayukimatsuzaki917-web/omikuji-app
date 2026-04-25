@@ -9,3 +9,7 @@ def get_omikuji_results() -> list[str]:
 def draw_omikuji(results: list[str]) -> str:
     # おみくじを引いて結果を返す
     return random.choice(results)
+
+def format_omikuji_result(result: str) -> str:
+    # おみくじの結果をフォーマットする
+    return f"あなたの運勢は「{result}」です！"
